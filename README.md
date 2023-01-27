@@ -8,11 +8,18 @@
 - Xcode 14.2
 - iOS 16.3 iPhone 11 Pro
 
-## 学習コンテンツの追加方法
+## 使用方法
+本zipファイルをダウンロードし, Xcodeで「教えて統計先生.xcodeproj」を開くことで使用することできます.
 
+## 学習コンテンツの追加方法
+学習リスト(Learn_contents)の「.init(text: "coming soon", file: AnyView(Coming_soon()))」のtextはドキュメント名, fileは遷移先となっています.<br>
+そのため, 最初は「Coming_soon()」の中身を自身で書いてみることをお勧めします. 多くの遷移先を導入する場合は, 「LearnContents.swift」内に記入していくのが良いでしょう.<br>
+また, 「Library.swift」の中身には様々なライブラリを導入していますので, ぜひご確認の上使用して見てください.(そこにライブラリを追加するのも良しです)<br>
+遷移先のViewの設定の後, 学習名を出力する配列(chapter)にディレクトリ名を記入しましょう.
 
 ## 問題コンテンツの追加方法
-
+「ProblemBank.json」に問題を入力していくのみで, 問題が追加されます. 但し, 注意点として選択問題であれば選択問題, 記入問題であれば記入問題のみの問題群にしなければ所望の問題群を作成することができません.<br>
+そのため, 「ProblemBank.json」にどのように問題が記入されているかを確認してから, 入れたい問題を入力していくのが良いでしょう.
 
 ## 参考文献
 - Rambling and Delving , 「[[SwiftUI] JSONファイルをSwiftUIでDecodeし、Viewで活用する方法 (ObservableObject)](https://www.harubears.com/ja/tech-ja/swiftui-ja/how-to-decode-json-display-view-observableobject/)」, (最終閲覧日: 2023年1月26日)
